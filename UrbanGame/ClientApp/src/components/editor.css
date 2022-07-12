@@ -1,0 +1,124 @@
+﻿#webgl {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+#editor {
+    position: absolute;
+    padding: 1rem;
+}
+
+#sideelement {
+    margin-top: 1rem;
+    width: calc(100% - 1rem);
+    height: calc(50% - 1.5rem);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: table;
+}
+
+#grid {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#sidebar {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -99;
+    padding-left: 1rem;
+    background-color: #fff;
+}
+
+#actionbar {
+    position: fixed;
+    width: calc(50% - 2rem);
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    z-index: -99;
+    text-align:center;
+}
+
+#patternpicker {
+    position: fixed;
+    width: calc(50% - 2rem);
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    z-index: -99;
+    text-align:center;
+}
+
+#roll {
+    overflow-y: scroll;
+    white-space: nowrap;
+    display: inline;
+    width: calc(50% - 8rem);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.detail {
+    margin: 0.1rem;
+    background-color: whitesmoke;
+    height: 13rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    align-items: center;
+    align-content:center;
+    text-align: center;
+    display: inline-grid;
+    cursor:pointer;
+}
+    .detail:hover {
+        background-color: #000;
+        height: 13rem;
+        border-radius: 0.3rem;
+    }
+
+    .detail:active {
+        background-color: #008EFF;
+    }
+
+        .detail:active span {
+            color: white;
+        }
+
+    .detail span {
+        color: dimgray;
+        align-items: center;
+        text-align: center;
+        display: contents;
+        user-select: none;
+        font-size: medium;
+    }
+
+    .detail:hover span {
+        color: white;
+        font-weight: 900;
+    }
+
+#selected {
+    position: absolute;
+    margin: 0rem;
+    background-color: #008EFF !important;
+    color: white;
+    height: 13rem !important;
+    border-radius: 0.3rem;
+    display: grid !important;
+    align-self: end;
+    text-align: center;
+}
